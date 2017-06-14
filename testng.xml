@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite" parallel="classes" thread-count="10">
+    <parameter name="a" value="10"/>
+    <parameter name="b" value="5"/>
+    <test name="Default tests" verbose="1" annotations="JDK" thread-count="10" parallel="classes">
+       <classes>
+           <class name="ua.com.calc.TestAdd"/>
+           <class name="ua.com.calc.TestDiv"/>
+         </classes>
+    </test>
+</suite>
